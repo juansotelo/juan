@@ -1,0 +1,614 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="jquery-mobile/jquery.mobile-1.4.5.min.css">
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.11.3.min.js"></script>
+<script src="jquery-mobile/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/main.js"></script>
+</head>
+
+<body onload="onBodyLoad()">
+
+<div data-role="page" id="inicio">
+  <div data-role="header" data-theme="a">
+
+   <a href="#AgregarP" data-role="button" data-icon="plus" data-iconpos="notext">Agregar producto</a>
+
+    <h1>Catalogo de productos
+    </h1>
+    <a href="#Info" data-role="button" data-icon="info" data-iconpos="notext">Acerca de mi</a>
+    <!--inicio navbar -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#inicio" data-icon="home">Inicio</a></li>
+        <li><a href="#AgregarP" data-icon="plus"> Agregar Productos</a></li>
+        <li><a href="#Info" data-icon="search"> Acerca de mi</a></li>
+        <li><a href="#inf" data-icon="info"> Info</a></li>
+
+      </ul>
+    </div>
+    <!--Fin footer -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <form>
+      <input data-type="search" id="filterCollapsibles">
+    </form>
+    <div data-role="collapsibleset" data-filter="true" data-inset="true" id="myFilter" data-input="#filterCollapsibles">
+      <div data-role="collapsible" data-filtertext="Apple" id="lista_apple">
+        <h3>IPHONE</h3>
+        <ul data-role="listview" data-inset="true"data-split-icon="edit">
+          <li><a href="#InfoMacBook">IPHONE 6S PLUS 128 GB ROSA </a><a href="#EditarMacBook">.</a></li>
+          
+          
+        </ul>
+      </div>
+        <div data-role="collapsible" data-filtertext="Dell"id="lista_dell">
+          <h3>LG</h3>
+          <ul data-role="listview" data-inset="true"data-split-icon="edit">
+            <li><a href="#InfoDelli">LG G3 STYLUS GRIS </a><a href="#EditarDell1">.</a></li>
+          
+          </ul>
+        </div>
+        <div data-role="collapsible" data-filtertext="Samsumg"id="lista_samsumg">
+          <h3>SAMSUNG</h3>
+          <ul data-role="listview" data-indata-inset="true"data-split-icon="edit">
+            <li><a href="#InfoSam1">SAMSUNG GALAXY A5 A510</a><a href="#EditarSam1">.</a></li>
+          
+          </ul>
+      </div>
+        
+    </div>
+    
+  </div>
+<!--Inicio footer -->
+   <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    
+    <li><a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#inf" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#Info" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+ </div> 
+<!--Fin footer -->
+</div> 
+<!--pagina  Información del Producto -->
+<div data-role="page" id="InfoSam1">
+  <div data-role="header">
+    <h1>Informacion del Producto</h1>
+    <!--inicio navbar -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#inicio" data-icon="home">Inicio</a></li>
+        <li><a href="#AgregarP" data-icon="plus"> Agregar Productos</a></li>
+        <li><a href="#Info" data-icon="search"> Acerca de mi</a></li>
+        <li><a href="#inf" data-icon="info"> Info</a></li>
+
+      </ul>
+    </div>
+    <!--Fin footer -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <label for="textinput2">Nombre:</label>
+    <input name="textinput2" type="text" id="textinput2" placeholder="Nombre del Producto" value="SAMSUNG GALAXY A5 A510" data-theme="b"  />
+    <input name="" type="image" src="assets/samsung.jpg" width="100" height="100" />
+    <label for="textarea">Descripcion:</label>
+          <textarea cols="40" rows="8" name="textarea" id="textarea1">Samsung Galaxy A5 A510 Dorado Movistar
+Marca: Samsung.
+Modelo: A510.
+Color: Dorado.
+CPU: Quad-Core, 1.2 GHz.
+Pantalla: Super AMOLED, 1,280 x 720 (HD).
+Resolución: CMOS de 13.0 MP.
+Procesador: Velocidad de CPU 1.2 GHz, Tipo de CPUQuad-Core.
+Pantalla: Tamaño (pantalla principal) 5.0 pulgadas (126.3 mm), Resolución (pantalla principal) 1280 x 720 (HD), Tecnología (pantalla principal) Super AMOLED, Número de colores (pantalla principal).
+Diseño metálico y sofisticado Galaxy A5 es el primer smartphone de Samsungcon un cuerpo completamente de metal, que además de ofrecer un innovador diseño, también cuenta con una pantalla Super AMOLED HD de 5 pulgadas así tendrás en tu mano el equilibrio perfecto entre un delgado y sofisticado cuerpo de metal y las mejores características de un Galaxy.
+La mejor forma de capturar selfies, para capturar las mejores selfies ya no tendrás ni siquiera que tocar el botón, toma una selfie con tu voz o la palma de tu mano y haz que tus amigos crean que tienes a tu propio fotógrafo.
+La tecnología Super AMOLED y la función Adapt Diplay permiten que los colores en la pantalla de tu Galaxy A5 se vean como en la vida real y se adapten de forma inteligente a cualquier ambiente y condiciones de iluminación, Además, con Audio Ajustable, tu Galaxy A5 automáticamente sube o baja el volumen en respuesta a los niveles de ruido a tu alrededor.
+Equipado con un procesador Quad core de 1.2 GHz, Galaxy A5 se maneja a una gran velocidad. Perfectamente podrás ver películas, escuchar música y correr múltiples aplicaciones. Con el soporte de la tecnología LTE Cat 4 podrás descargar mucho más rápido que cualquiera.
+          </textarea>
+    <label for="textinput2" >Precio:</label>
+    <input type="text" placeholder="Presio" name="textinput2" id="textinput1" value="$6,959"  /> 
+    <label for="textinput2">Existencia:</label>
+    <input type="text" placeholder="Existencia" name="textinput2" id="textinput2" value="9"  />
+    <label for="textinput2">Categoria:</label>
+    <input type="text" placeholder="Categoria" name="textinput2" id="textinput3" value="SAMSUNG"  />
+    <label for="textinput2">Fecha registro:</label>
+    <input type="text" placeholder="Fecha registro:" name="textinput4" id="textinput2" value="02/06/2016"  />
+<div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button">Enviar</a><a href="#inicio" data-role="button">Cancelar</a></div>
+  </div>
+
+  <!--Inicio footer -->
+   <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    
+    <li><a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#inf" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+
+ </div> 
+<!--Fin footer -->
+</div> 
+<!--fin  Información del Producto -->
+<!--pagina  Información del Producto -->
+<div data-role="page" id="InfoDelli">
+  <div data-role="header">
+    <h1>Informacion del Producto</h1>
+    <!--inicio navbar -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#inicio" data-icon="home">Inicio</a></li>
+        <li><a href="#AgregarP" data-icon="plus"> Agregar Productos</a></li>
+        <li><a href="#Info" data-icon="search"> Acerca de mi</a></li>
+        <li><a href="#inf" data-icon="info"> Info</a></li>
+
+      </ul>
+    </div>
+    <!--Fin footer -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <label for="textinput2">Nombre:</label>
+    <input type="text" placeholder="Nombre del Producto" name="textinput2" id="textinput2" value="LG G3 STYLUS GRIS "  />
+    <input name="" type="image" src="assets/lg.jpg" width="100" height="100" />
+    <label for="textarea">Descripcion:</label>
+          <textarea cols="40" rows="8" name="textarea" id="textarea1">LG G3 Stylus Gris Movistar
+Marca: LG.
+Modelo: G3 Stylus.
+Sistema Operativo: Android 4.4.2 Kitkat.
+Velocidad del Procesador: 1.3 GHz.
+Tipo de Conexiones: Bluetooth, Wi-Fi.
+Procesador: Quad Core de 4 núcleos.
+Memoria Interna: 8 GB.
+Memoria RAM: Expandible hasta 32 GB.
+Tipo de Pantalla: Táctil, qHD 960X540 píxeles.
+Tamaño de Pantalla: 5.5 Pulgadas.
+Cámara: Si.
+Pixeles de Cámara: 13 Megapíxeles.
+Videocámara: Si.
+Color: Gris.
+Formatos de Reproducción: MP3.
+Medidas: Alto 15 centímetros x Ancho 8 centímetros x Profundidad 1 centímetro.
+Peso: 163 gramos.</textarea>
+    <label for="textinput2" >Precio:</label>
+    <input type="text" placeholder="Presio" name="textinput2" id="textinput1" value="$2,959"  /> 
+    <label for="textinput2">Existencia:</label>
+    <input type="text" placeholder="Existencia" name="textinput2" id="textinput2" value="10"  />
+    <label for="textinput2">Categoria:</label>
+    <input type="text" placeholder="Categoria" name="textinput2" id="textinput3" value="LG"  />
+    <label for="textinput2">Fecha registro:</label>
+    <input type="text" placeholder="Fecha registro:" name="textinput4" id="textinput2" value="02/06/2016"  />
+<div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button">Enviar</a><a href="#inicio" data-role="button">Cancelar</a></div>
+  </div>
+
+  <!--Inicio footer -->
+   <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    
+    <li><a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#inf" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+
+ </div> 
+<!--Fin footer -->
+</div> 
+<!--fin  Información del Producto -->
+<!--pagina  Información del Producto -->
+<div data-role="page" id="InfoMacBook">
+  <div data-role="header">
+    <h1>Informacion del Producto</h1>
+    <!--inicio navbar -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#inicio" data-icon="home">Inicio</a></li>
+        <li><a href="#AgregarP" data-icon="plus"> Productos</a></li>
+        <li><a href="#Info" data-icon="search"> Acerca de mi</a></li>
+        <li><a href="#inf" data-icon="info"> Info</a></li>
+
+      </ul>
+    </div>
+    <!--Fin footer -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <label for="textinput2">Nombre:</label>
+    <input type="text" placeholder="Nombre del Producto" name="textinput2" id="textinput2" value="IPHONE 6S PLUS 128 GB ROSA "  />
+    <input name="" type="image" src="assets/iphone.jpg" width="100" height="100" />
+    <label for="textarea">Descripcion:</label>
+          <textarea cols="40" rows="8" name="textarea" id="textarea1">iPhone 6S Plus 128 GB Rosa Movistar
+Marca: Apple.
+Modelo: iPhone 6S Plus.
+Sistema Operativo: iOS 9.
+Memoria Interna: 128 GB.
+Tipo de Pantalla: Pantalla retina HD con 3D Touch de 5.5 pulgadas (diagonal) retroiluminada por LED.
+Tamaño de Pantalla: 5.5 pulgadas.
+Resolución de Pantalla: 1920 x 1080 pixeles a 401 ppi.
+Cámara: Nueva cámara iSight de 12 megapíxeles con pixeles de 1.22 µ y estabilización óptica de imagen.
+Características: Sensor Touch ID para identificar huellas digitales, revestimiento oleofóbico resistente a marcas dactilares en el frente, barómetro, giroscopio de tres ejes, acelerómetro, sensor de proximidad y sensor de luz ambiental.
+Videocámara: Grabación de videos 4K (3840 x 2160) a 30 fps, HD de 1080p a 30 fps o 60 fps y HD de 720p a 30 fps.
+Color: Rosa.
+Chip A9 con arquitectura de 64 bits.
+Medidas: Alto 15.82 centímetros X Ancho 7.79 centímetros X Profundidad 0.73 centímetros.
+Peso: 192 gramos*.</textarea>
+    <label for="textinput2" >Precio:</label>
+    <input type="text" placeholder="Presio" name="textinput2" id="textinput1" value="$17,199"  /> 
+    <label for="textinput2">Existencia:</label>
+    <input type="text" placeholder="Existencia" name="textinput2" id="textinput2" value="13"  />
+    <label for="textinput2">Categoria:</label>
+    <input type="text" placeholder="Categoria" name="textinput2" id="textinput3" value="IPHONE"  />
+    <label for="textinput2">Fecha registro:</label>
+    <input type="text" placeholder="Fecha registro:" name="textinput4" id="textinput2" value="02/06/2016"  />
+<div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button">Enviar</a><a href="#inicio" data-role="button">Cancelar</a></div>
+  </div>
+
+  <!--Inicio footer -->
+   <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    
+    <li><a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#inf" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+
+ </div> 
+<!--Fin footer -->
+</div> 
+<!--fin  Información del Producto -->
+<!--pagina  Información -->
+<div data-role="page" id="Info">
+  <div data-role="header">
+    <h1>Acerca de mi</h1>
+    <!--inicio navbar -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#inicio" data-icon="home">Inicio</a></li>
+        <li><a href="#AgregarP" data-icon="plus"> Agregar Productos</a></li>
+        <li><a href="#Info" data-icon="search"> Acerca de mi</a></li>
+        <li><a href="#inf" data-icon="info"> Info</a></li>
+
+      </ul>
+    </div>
+    <!--Fin footer -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    
+    <div id="foto"><img id="foto_img" src="assets/juan sotelo.jpg"/></div>
+    <div data-role="fieldcontain">
+			<label for="textinput"><b>Nombre:</b></label>
+			<em>Mollinedo Sotelo Jose Juan</em>
+			<p>
+			  <label for="textinput"><b>Carrera:</b></label>
+	  <em>Ingeniería en Sistemas de Información</em></p>
+			<p>
+			  <label for="textinput"><b>Materia:</b></label>
+			  <em>Desarrollo Aplicaciones e-commerce</em>
+	  </p>
+			<p>
+			  <label for="textinput"><b>Preferencias:</b></label>
+	  <em>Desarrollar Aplicaciones en e-commerce </em></p>
+    </div>
+  </div>
+
+  <!--Inicio footer -->
+   <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    
+    <li><a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#inf" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+
+ </div> 
+<!--Fin footer -->
+</div> 
+<!--fin  Información -->
+
+<!--  Inf -->
+<div data-role="page" id="inf" data-dialog="true">
+  <div data-role="header">
+    <h1>informacion</h1>
+  </div>
+  <div data-role="content">
+    <p>Aplicación creada con JQuery Mobile y PhoneGap, mediante Dreamweaver CS6.  Mollinedo Sotelo Jose Juan/ Mayo de 2016</p>
+  <a href="#inicio" data-role="button">Cerrar</a></div>
+  
+</div>
+<!--fin  Inf -->
+<!--pagina  Agregar  Producto -->
+<div data-role="page" id="AgregarP">
+  <div data-role="header">
+    <h1>Agregar  Producto</h1>
+    <!--inicio navbar -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#inicio" data-icon="home">Inicio</a></li>
+        <li><a href="#AgregarP" data-icon="plus"> Agregar Productos</a></li>
+        <li><a href="#Info" data-icon="search"> Acerca de mi</a></li>
+        <li><a href="#inf" data-icon="info"> Info</a></li>
+
+      </ul>
+    </div>
+    <!--Fin footer -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <label for="textinput2">Nombre:</label>
+    <input type="text" placeholder="Nombre del Producto" name="ti_nombre" id="textinput2" value="" id="ti_nombre" />
+    <label for="textinput2">Imagen:</label>
+	 <form method="post" id="formulario" enctype="multipart/form-data" id="fotoEdit_img">
+	    <input type="file" name="file">
+	 </form>
+	  <div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button">Agregar Imagen</a></div>
+
+    <label for="textarea">Descripcion:</label>
+          <textarea cols="40" rows="8" name="ti_descripción" id="ti_descripción"></textarea>
+    <label for="textinput2">Precio:</label>
+    <input type="text" placeholder="Presio" name="ti_precio" id="ti_precio" value=""  /> 
+    <label for="textinput2">Existencia:</label>
+    <input type="text" placeholder="Existencia" name="ti_existencia" id="ti_existencia" value=""  />
+    <label for="textinput2">Categoria:</label>
+    <div id="cajaCategorias">
+               <div data-role="fieldcontain" align="center">
+                 <fieldset data-role="controlgroup" data-type="horizontal">
+                   <input type="radio" name="categoriaSel" id="cat_apple4" value="apple" />
+                   <label for="cat_apple4">IPHONE</label>
+                   <input type="radio" name="categoriaSel" id="cat_dell4" value="dell" />
+                   <label for="cat_dell4">LG</label>
+                   <input type="radio" name="categoriaSel" id="cat_samsumg4" value="samsumg" />
+                   <label for="cat_samsumg4">SAMSUNG </label>
+                 </fieldset>
+               </div>          
+    </div>
+    <label for="textinput2">Fecha registro:</label>
+    <input type="text" placeholder="Fecha registro:" name="Fecha registro" id="textinput2" value=""  />
+<div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button" id="b_guardar">Agregar</a><a href="#" data-role="button">Cancelar</a></div>
+  </div>
+
+  <!--Inicio footer -->
+   <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    
+    <li><a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#inf" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+
+ </div> 
+<!--Fin footer -->
+</div> 
+<!--fin  Agregar del Producto -->
+<!--pagina  editar Producto -->
+<div data-role="page" id="EditarMacBook">
+  <div data-role="header">
+    <h1>Editar Producto</h1>
+    <!--inicio navbar -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#inicio" data-icon="home">Inicio</a></li>
+        <li><a href="#AgregarP" data-icon="plus"> Agregar Productos</a></li>
+        <li><a href="#Info" data-icon="search"> Acerca de mi</a></li>
+        <li><a href="#inf" data-icon="info"> Info</a></li>
+
+      </ul>
+    </div>
+    <!--Fin footer -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <label for="textinput2">Nombre:</label>
+    <input type="text" placeholder="Nombre del Producto" name="ti_nombre" id="textinput2" value="MacBook" id="ti_nombre" />
+    <label for="textinput2">Imagen:</label>
+   <form method="post" id="formulario" enctype="multipart/form-data" id="fotoEdit_img">
+      <input type="file" name="file">
+   </form>
+    <div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button">Agregar Imagen</a></div>
+
+    <label for="textarea">Descripcion:</label>
+          <textarea cols="40" rows="8" name="ti_descripción" id="ti_descripción"></textarea>
+    <label for="textinput2">Precio:</label>
+    <input type="text" placeholder="Presio" name="ti_precio" id="ti_precio"  /> 
+    <label for="textinput2">Existencia:</label>
+    <input type="text" placeholder="Existencia" name="ti_existencia" id="ti_existencia"  />
+    <label for="textinput2">Categoria:</label>
+    <div id="cajaCategorias">
+               <div data-role="fieldcontain" align="center">
+                 <fieldset data-role="controlgroup" data-type="horizontal">
+                   <input type="radio" name="categoriaSel" id="cat_apple3" value="apple" />
+                   <label for="cat_apple3">IPHONE</label>
+                   <input type="radio" name="categoriaSel" id="cat_dell3" value="dell" />
+                   <label for="cat_dell3">LG</label>
+                   <input type="radio" name="categoriaSel" id="cat_samsumg3" value="samsumg" />
+                   <label for="cat_samsumg3">SAMSUNG </label>
+                 </fieldset>
+               </div>          
+    </div>
+    <label for="textinput2">Fecha registro:</label>
+    <input type="text" placeholder="Fecha registro:" name="Fecha registro" id="textinput2"  />
+<div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button" id="b_guardar">Editar</a><a href="#" data-role="button">Eliminar</a><a href="#inicio" data-role="button">Cancelar</a></div>
+  </div>
+
+  <!--Inicio footer -->
+   <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    
+    <li><a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#inf" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+
+ </div> 
+<!--Fin footer -->
+</div> 
+<!--fin  editar Producto -->
+<!--pagina  editar Producto -->
+<div data-role="page" id="EditarDell1">
+  <div data-role="header">
+    <h1>Editar  Producto</h1>
+    <!--inicio navbar -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#inicio" data-icon="home">Inicio</a></li>
+        <li><a href="#AgregarP" data-icon="plus"> Agregar Productos</a></li>
+        <li><a href="#Info" data-icon="search"> Acerca de mi</a></li>
+        <li><a href="#inf" data-icon="info"> Info</a></li>
+
+      </ul>
+    </div>
+    <!--Fin footer -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <label for="textinput2">Nombre:</label>
+    <input type="text" placeholder="Nombre del Producto" name="ti_nombre" id="textinput2" value="Dell inspiriont 6000" id="ti_nombre" />
+    <label for="textinput2">Imagen:</label>
+   <form method="post" id="formulario" enctype="multipart/form-data" id="fotoEdit_img">
+      <input type="file" name="file">
+   </form>
+    <div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button">Agregar Imagen</a></div>
+
+    <label for="textarea">Descripcion:</label>
+          <textarea cols="40" rows="8" name="ti_descripción" id="ti_descripción"></textarea>
+    <label for="textinput2">Precio:</label>
+    <input type="text" placeholder="Presio" name="ti_precio" id="ti_precio"  /> 
+    <label for="textinput2">Existencia:</label>
+    <input type="text" placeholder="Existencia" name="ti_existencia" id="ti_existencia"  />
+    <label for="textinput2">Categoria:</label>
+    <div id="cajaCategorias">
+               <div data-role="fieldcontain" align="center">
+                 <fieldset data-role="controlgroup" data-type="horizontal">
+                   <input type="radio" name="categoriaSel" id="cat_apple2" value="apple" />
+                   <label for="cat_apple2">IPHONE</label>
+                   <input type="radio" name="categoriaSel" id="cat_dell2" value="dell" />
+                   <label for="cat_dell2">LG</label>
+                   <input type="radio" name="categoriaSel" id="cat_samsumg2" value="samsumg" />
+                   <label for="cat_samsumg2">SAMSUNG </label>
+                 </fieldset>
+               </div>          
+    </div>
+    <label for="textinput2">Fecha registro:</label>
+    <input type="text" placeholder="Fecha registro:" name="Fecha registro" id="textinput2"  />
+<div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button" id="b_guardar">Editar</a><a href="#" data-role="button">Eliminar</a><a href="#inicio" data-role="button">Cancelar</a></div>
+  </div>
+
+  <!--Inicio footer -->
+   <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    
+    <li><a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#inf" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+
+ </div> 
+<!--Fin footer -->
+</div> 
+<!--fin  editar Producto -->
+<!--pagina  editar Producto -->
+<div data-role="page" id="EditarSam1">
+  <div data-role="header">
+    <h1>Editar Producto</h1>
+    <!--inicio navbar -->
+    <div data-role="navbar">
+      <ul>
+        <li><a href="#inicio" data-icon="home">Inicio</a></li>
+        <li><a href="#AgregarP" data-icon="plus"> Agregar Productos</a></li>
+        <li><a href="#Info" data-icon="search"> Acerca de mi</a></li>
+        <li><a href="#inf" data-icon="info"> Info</a></li>
+
+      </ul>
+    </div>
+    <!--Fin footer -->
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <label for="textinput2">Nombre:</label>
+    <input type="text" placeholder="Nombre del Producto" name="ti_nombre" id="textinput2" value="Samsung ATIV Book 9 Plus " id="ti_nombre" />
+    <label for="textinput2">Imagen:</label>
+   <form method="post" id="formulario" enctype="multipart/form-data" id="fotoEdit_img">
+      <input type="file" name="file">
+   </form>
+    <div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button">Agregar Imagen</a></div>
+
+    <label for="textarea">Descripcion:</label>
+          <textarea cols="40" rows="8" name="ti_descripción" id="ti_descripción"></textarea>
+    <label for="textinput2">Precio:</label>
+    <input type="text" placeholder="Presio" name="ti_precio" id="ti_precio"  /> 
+    <label for="textinput2">Existencia:</label>
+    <input type="text" placeholder="Existencia" name="ti_existencia" id="ti_existencia"  />
+    <label for="textinput2">Categoria:</label>
+    <div id="cajaCategorias">
+               <div data-role="fieldcontain" align="center">
+                 <fieldset data-role="controlgroup" data-type="horizontal">
+                   <input type="radio" name="categoriaSel" id="cat_apple" value="apple" />
+                   <label for="cat_apple">IPHONE</label>
+                   <input type="radio" name="categoriaSel" id="cat_dell" value="dell" />
+                   <label for="cat_dell">LG</label>
+                   <input type="radio" name="categoriaSel" id="cat_samsumg" value="samsumg" />
+                   <label for="cat_samsumg">SAMSUNG </label>
+                 </fieldset>                 
+               </div>          
+         </div>
+    <label for="textinput2">Fecha registro:</label>
+    <input type="text" placeholder="Fecha registro:" name="Fecha registro" id="textinput2"  />
+<div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button" id="b_guardar">Editar</a><a href="#" data-role="button">Eliminar</a><a href="#inicio" data-role="button">Cancelar</a></div>
+  </div>
+
+  <!--Inicio footer -->
+   <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <div data-role="navbar" data-type="horizontal">
+    <ul>
+    
+    <li><a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+    <li><a href="#inf" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+    <li><a href="#inicio" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+    
+    </ul>
+    </div>
+
+ </div> 
+<!--Fin footer -->
+</div> 
+<!--fin  editar Producto -->
+</body>
+</html>
+

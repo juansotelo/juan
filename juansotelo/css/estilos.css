@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.img{
+	width:30px;
+	height:30px;
+	vertical-align:middle;
+	margin-right:10px;
+}
+#foto, #fotoEdit{
+	text-align:center;
+}
+#foto img{
+	max-height:150px;
+}
+
+#fotoEdit img{
+	max-height:50px;
+}

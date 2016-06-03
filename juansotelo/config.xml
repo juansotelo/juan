@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.clientes-monica"
+    version   = "1.0.0">
+
+<name>Catalogo de productos</name>
+
+<description>
+Catalogo de productos  con PhoneGap</description>
+
+<author href="mollinedo" email="">
+Academico
+</author>
+<icon src="images/laptop_PNG5905.png" gap:density="hdpi" gap:platform="android" />
+<gap:plugin name="org.apache.cordova.dialogs" />
+<preference name="phonegap-version" value="3.3.0" />
+</widget>
